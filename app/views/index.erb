@@ -1,0 +1,57 @@
+
+<h1>Deaf Aunty</h1>
+
+<p>Say something to Aunty</p>
+
+<form action="/cool_url" method="get">
+  <input type="text" name="get_input">
+  <input type="submit" value="GET!">
+</form>
+
+<form action="/cool_url" method="post">
+  <input type="text" name="post_input">
+  <input type="submit" value="POST!">
+</form>
+
+<!-- Text form -->
+<form name="comments_section" action="/cool_url" method="post">
+<textarea cols="50" rows="20" name="aunty_likes[compliments]">
+
+Our newly created text area :)
+
+</textarea>
+<input type="submit" value="POST!">
+<!-- </form> -->
+
+<!-- Radio buttons -->
+<!-- <form name="radio_buttons" action= "/cool_url" method="post"> -->
+<br>
+<input type="radio" name="favourite_animal" value="Cat"> Cat<br>
+<input type="radio" name="favourite_animal" value="Dog" checked>Dog<br>
+<input type="radio" name="favourite_animal" value="Cow"> Cow<br>
+<input type="submit" value="POST!">
+<!-- </form> -->
+
+<!-- Checkbox -->
+<!-- <form name="check_boxes" action= "/cool_url" method="post"> -->
+<br>
+<input type="checkbox" name="food_i_like[f]" value="Fruit" checked>Fruit<br>
+<input type="checkbox" name="food_i_like[m]" value="Meat"> Meat<br>
+<input type="checkbox" name="food_i_like[v]" value="Vegetables"> Vegetables<br>
+<br>
+<input type="submit" value="POST!">
+<!-- </form> -->
+
+<!-- Drop down menu -->
+<!-- <form name="drop_down_form" action= "/cool_url" method="post"> -->
+<select name="drop_down">
+<option value="first_option"> First Option</option>
+<option value="second_option"> Second Option</option>
+<option value="third_option"> Third Option</option>
+</select>
+<input type="submit" value="POST!">
+</form>
+
+
+<p>URL parameters:</p>
+<%= params %>
